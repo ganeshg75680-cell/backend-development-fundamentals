@@ -1,0 +1,1 @@
+After you run the app, save your actual browser screenshots in this folder as home.png, about.png, time.png, and not-found.png.

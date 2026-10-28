@@ -1,0 +1,40 @@
+LAB 1 — NODE.JS AND EXPRESS SERVER
+
+1. Install Node.js from https://nodejs.org/ and restart VS Code if needed.
+2. Extract/open this lab-01 folder in VS Code.
+3. Open Terminal > New Terminal.
+4. Check installation:
+   node -v
+   npm -v
+5. Install project packages:
+   npm install
+6. Edit server.js and replace "Your Name" and "Your Section".
+7. Run the Express app:
+   npm start
+8. Test these URLs in your browser:
+   http://localhost:3000/
+   http://localhost:3000/about
+   http://localhost:3000/time
+   http://localhost:3000/unknown
+9. Stop the app with Ctrl+C before running the basic server:
+   npm run start:basic
+10. Capture real screenshots and save them in screenshots/.
+
+GITHUB PUSH (run commands from the course repository root):
+- If you already cloned your GitHub repository, copy this lab-01 folder into it.
+- Then run:
+    git status
+    git add lab-01/
+    git commit -m "Add Lab 1 Node.js and Express server"
+    git push
+
+For a brand-new local repository, initialize and connect it to the GitHub URL first:
+    git init
+    git branch -M main
+    git remote add origin YOUR_GITHUB_REPOSITORY_URL
+    git add lab-01/
+    git commit -m "Add Lab 1 Node.js and Express server"
+    git push -u origin main
+
+Replace YOUR_GITHUB_REPOSITORY_URL with the actual HTTPS URL copied from your repository.
+Do not commit node_modules or .env.
