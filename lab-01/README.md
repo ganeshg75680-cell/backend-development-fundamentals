@@ -6,7 +6,7 @@
 
 ## 1. Live Link
 
-**Deployment Status:** Not deployed yet.
+**Deployment Status:** https://backend-development-fundamentals-almv.onrender.com/
 
 Add your public deployment URL here after successfully deploying the project.
 
