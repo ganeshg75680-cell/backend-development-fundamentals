@@ -1,75 +1,159 @@
-# Lab 1: Node.js and Express server
+# Lab 1: Node.js and Express Server
 
 **Name:** Ganesh  
 **Registration Number:** 9041  
 **Section:** CSE-GenAI
 
-## Live link
+## 1. Live Link
 
-Not deployed yet. Add your public deployment URL here after deployment.
+**Deployment Status:** Not deployed yet.
 
-## Objective
+Add your public deployment URL here after successfully deploying the project.
 
-Create a basic HTTP server using Node.js and an Express server with routes, JSON responses, current date/time, and a 404 handler.
+## 2. Objective
 
-## Requirements
+To create a basic HTTP server using Node.js and an Express server with multiple routes, JSON responses, the current date and time, and a custom 404 Not Found handler.
 
-- Node.js and npm
+## 3. Requirements
+
+- Node.js
+- npm (Node Package Manager)
 - A web browser
-- Git (for GitHub submission)
+- Git and a GitHub account
 
-## How to install and run
+## 4. Project Structure
 
-1. Open a terminal in this `lab-01` folder.
-2. Install dependencies:
+```text
+lab-01/
+├── server.js
+├── basic-server.js
+├── package.json
+├── package-lock.json
+├── README.md
+└── screenshots/
+    ├── home.png
+    ├── about.png
+    ├── time.png
+    └── not-found.png
+```
 
-   ```bash
-   npm install
-   ```
+**Note:** The screenshot files must be created by running and testing the application. The `node_modules/` folder should not be committed to GitHub.
 
-3. Start the Express server:
+## 5. Installation and Execution
 
-   ```bash
-   npm start
-   ```
+### Step 1: Open the project folder
 
-4. Open `http://localhost:3000` in your browser.
+Open the terminal in the `lab-01` folder.
 
-### Run the basic Node.js HTTP server
+### Step 2: Install dependencies
 
-Stop the Express server first with `Ctrl+C`, then run:
+```bash
+npm install
+```
+
+This command installs the packages required by the project.
+
+### Step 3: Start the Express server
+
+```bash
+npm start
+```
+
+Open the following URL in your browser:
+
+http://localhost:3000
+
+### Step 4: Run the basic Node.js HTTP server
+
+Stop the Express server first by pressing `Ctrl + C` in the terminal. Then run:
 
 ```bash
 npm run start:basic
 ```
 
-Both programs use port 3000 by default, so do not run them at the same time on the same port.
+Both servers use port 3000 by default. Run only one at a time unless you configure different ports.
 
-## Endpoints
+## 6. Endpoints and Their Functions
 
-| Method | Path | Description |
-|---|---|---|
-| GET | `/` | Returns a welcome message |
-| GET | `/about` | Returns name and section as JSON |
-| GET | `/time` | Returns the current date and time as JSON |
-| GET | `/unknown` | Example unmatched path; returns 404 |
+| Method | Path | Description | Expected Status |
+|---|---|---|---|
+| GET | `/` | Returns a welcome message | 200 OK |
+| GET | `/about` | Returns name and section as JSON | 200 OK |
+| GET | `/time` | Returns the current date and time as JSON | 200 OK |
+| GET | `/unknown` | Demonstrates an unmatched route | 404 Not Found |
 
-## Screenshots
+### Endpoint URLs
 
-After running and testing the endpoints, save your own screenshots in the `screenshots/` folder and uncomment/update these links as appropriate:
+- Home: http://localhost:3000/
+- About: http://localhost:3000/about
+- Time: http://localhost:3000/time
+- 404 Example: http://localhost:3000/unknown
 
-- Home: `screenshots/home.png`
-- About: `screenshots/about.png`
-- Time: `screenshots/time.png`
-- 404: `screenshots/not-found.png`
+## 7. Screenshots
 
-## Status codes
+Save your screenshots in the `screenshots/` folder. The images will appear directly in this README when the files are committed to GitHub.
 
-- `200 OK`: the three defined GET endpoints return successfully.
-- `404 Not Found`: a path that does not match a defined route.
+### 7.1 Home Page
 
-## Notes
+![Home Page Screenshot](screenshots/home.png)
 
-Replace the name and section placeholders in `server.js` and this README. Record any problems you encountered and how you solved them.
+### 7.2 About Page
 
-Do not commit `node_modules/` or `.env` files.
+![About Page Screenshot](screenshots/about.png)
+
+### 7.3 Current Date and Time
+
+![Time Endpoint Screenshot](screenshots/time.png)
+
+### 7.4 404 Not Found Page
+
+![404 Not Found Screenshot](screenshots/not-found.png)
+
+**Important:** These image links require the corresponding PNG files to exist in the `screenshots/` folder. Replace them with your actual screenshots; do not submit empty or missing screenshot files.
+
+## 8. HTTP Status Codes
+
+**200 OK:** The request was successful. The home, about, and time routes should return this status.
+
+**404 Not Found:** The requested URL does not match any defined route. The server returns this status for an unknown path.
+
+## 9. Problems Encountered and Solutions
+
+Record the actual issues encountered while completing the lab. Examples you can use if they apply to your experience:
+
+- **Problem:** Dependencies were missing.  
+  **Solution:** Ran `npm install` to install the required packages.
+
+- **Problem:** The server port was already in use.  
+  **Solution:** Stopped the other server using `Ctrl + C` before starting another server on port 3000.
+
+- **Problem:** Screenshots were not visible in the GitHub README.  
+  **Solution:** Used relative Markdown image paths and uploaded the screenshot files to the `screenshots/` folder.
+
+## 10. GitHub Submission
+
+Initialize Git if necessary, then run these commands from the project folder:
+
+```bash
+git init
+git add .
+git commit -m "Complete Lab 1 Node.js and Express server"
+git branch -M main
+git remote add origin YOUR_GITHUB_REPOSITORY_URL
+git push -u origin main
+```
+
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual GitHub repository URL. If a remote is already configured, do not add it again.
+
+Create a `.gitignore` file containing:
+
+```gitignore
+node_modules/
+.env
+```
+
+Check that the screenshots are included in the commit and that `node_modules/` and `.env` are excluded.
+
+## 11. Conclusion
+
+In this lab, I created and tested a basic HTTP server using Node.js and Express. I learned how to define routes, return JSON responses, display the current date and time, handle unknown routes with a 404 status code, and document the project using a GitHub README with screenshots.
