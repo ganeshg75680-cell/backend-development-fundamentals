@@ -2,7 +2,18 @@
 
 **Name:** G. Ganesh · **Registration number:** 9041 · **Section:** CSE-GenAI-2A
 
-**Live link:** PASTE YOUR DEPLOYED URL HERE (or explain why the project could not be deployed)
+**Live link:** Add the URL from your Render service after deployment.
+
+## Deploy on Render
+
+This repository includes a Render Blueprint at the repository root. To deploy:
+
+1. Push the repository to GitHub.
+2. In Render, choose **New +** → **Blueprint** and connect this repository.
+3. Render reads `render.yaml` and creates the `lab-02-sqlite-crud` web service. The Blueprint sets `lab-02` as the root directory, runs `npm ci` to install dependencies, and starts the app with `npm start`.
+4. When the deployment finishes, open the service URL followed by `/books/` to verify the API, then add the service URL here.
+
+The service uses Render's assigned `PORT` and Node.js 22. The included SQLite database is part of the deployment. On Render's free plan, the filesystem is ephemeral, so changes made through POST, PUT, or DELETE can be lost when the service restarts or redeploys. Use a paid persistent disk or an external database if book changes must persist.
 
 ## How to run
 

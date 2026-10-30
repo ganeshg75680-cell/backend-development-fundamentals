@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: lab-02-sqlite-crud
+    runtime: node
+    plan: free
+    rootDir: lab-02
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /books/
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
