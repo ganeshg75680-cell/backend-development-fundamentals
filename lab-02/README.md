@@ -2,7 +2,7 @@
 
 **Name:** G. Ganesh · **Registration number:** 9041 · **Section:** CSE-GenAI-2A
 
-**Live link:** Add the URL from your Render service after deployment.
+**Live link:** https://backend-development-fundamentals-1.onrender.com
 
 ## Deploy on Render
 
