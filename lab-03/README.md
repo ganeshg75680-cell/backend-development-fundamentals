@@ -3,7 +3,7 @@
 Name: GOLLA GANESH
 Registration number: 252U1R9041
 Section: CSE-GenAI-2A-304
-Live link: Add your deployed URL after deployment.
+Live link: https://backend-development-fundamentals-3-9iza.onrender.com/books
 
 ## Install and run
 Requires Node.js 18 or newer.
